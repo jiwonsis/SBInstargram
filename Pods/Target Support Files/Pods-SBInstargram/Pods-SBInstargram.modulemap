@@ -1,0 +1,6 @@
+framework module Pods_SBInstargram {
+  umbrella header "Pods-SBInstargram-umbrella.h"
+
+  export *
+  module * { export * }
+}

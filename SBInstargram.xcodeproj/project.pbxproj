@@ -12,9 +12,11 @@
 		34384E881FF939C000E607EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34384E861FF939C000E607EC /* Main.storyboard */; };
 		34384E8A1FF939C000E607EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34384E891FF939C000E607EC /* Assets.xcassets */; };
 		34384E8D1FF939C000E607EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34384E8B1FF939C000E607EC /* LaunchScreen.storyboard */; };
+		AA2346C9EC31F35560A8BC18 /* Pods_SBInstargram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103EC1040016F3DDCDD27B01 /* Pods_SBInstargram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103EC1040016F3DDCDD27B01 /* Pods_SBInstargram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBInstargram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34384E7F1FF939C000E607EC /* SBInstargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBInstargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34384E821FF939C000E607EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34384E841FF939C000E607EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		34384EA31FF93A2200E607EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		34384EA51FF93A2600E607EC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		34384EA71FF93A2D00E607EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8C78281E43C26CA98F805A2B /* Pods-SBInstargram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBInstargram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBInstargram/Pods-SBInstargram.debug.xcconfig"; sourceTree = "<group>"; };
+		B4BE7B82B2CD2F45FAE26241 /* Pods-SBInstargram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBInstargram.release.xcconfig"; path = "Pods/Target Support Files/Pods-SBInstargram/Pods-SBInstargram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2346C9EC31F35560A8BC18 /* Pods_SBInstargram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,7 @@
 				34384E811FF939C000E607EC /* SBInstargram */,
 				34384E801FF939C000E607EC /* Products */,
 				34384E941FF939E900E607EC /* Frameworks */,
+				5E679A5F230F2C05D2534A46 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +94,18 @@
 				34384E991FF93A0400E607EC /* AudioToolbox.framework */,
 				34384E971FF939F800E607EC /* libz.tbd */,
 				34384E951FF939E900E607EC /* libsqlite3.0.tbd */,
+				103EC1040016F3DDCDD27B01 /* Pods_SBInstargram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E679A5F230F2C05D2534A46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C78281E43C26CA98F805A2B /* Pods-SBInstargram.debug.xcconfig */,
+				B4BE7B82B2CD2F45FAE26241 /* Pods-SBInstargram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34384E911FF939C000E607EC /* Build configuration list for PBXNativeTarget "SBInstargram" */;
 			buildPhases = (
+				F43F29F19C46E0C7E85FA43B /* [CP] Check Pods Manifest.lock */,
 				34384E7B1FF939C000E607EC /* Sources */,
 				34384E7C1FF939C000E607EC /* Frameworks */,
 				34384E7D1FF939C000E607EC /* Resources */,
+				244EFF906C8A71363E8D42D8 /* [CP] Embed Pods Frameworks */,
+				D23AEB440F6CC98DC93FB552 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +177,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		244EFF906C8A71363E8D42D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SBInstargram/Pods-SBInstargram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBInstargram/Pods-SBInstargram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23AEB440F6CC98DC93FB552 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBInstargram/Pods-SBInstargram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F43F29F19C46E0C7E85FA43B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SBInstargram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34384E7B1FF939C000E607EC /* Sources */ = {
@@ -300,6 +375,7 @@
 		};
 		34384E921FF939C000E607EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C78281E43C26CA98F805A2B /* Pods-SBInstargram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +391,7 @@
 		};
 		34384E931FF939C000E607EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4BE7B82B2CD2F45FAE26241 /* Pods-SBInstargram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
